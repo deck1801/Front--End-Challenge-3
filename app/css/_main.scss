@@ -1,0 +1,47 @@
+.container{
+    position: absolute;
+    padding: 0;
+    width:20.4375rem;
+    height: 82.875rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 1rem;
+    
+
+    .sec{
+        width: 100%;
+        height:27.5625rem;
+        display: flex;
+        flex-direction: column;
+        padding:3.0625rem;
+        
+        svg{
+            width: 4.0625rem;
+            height: 2.625rem;
+            margin-bottom: 2.5625rem;
+        }
+
+        h2{
+            font-size: 2.125rem;
+            color: $VeryLightGray;
+            margin-bottom: 2.4375rem;
+            font-family: 'Lexend Deca', sans-serif;
+        }
+        
+        &:nth-child(1){
+            background: $BrightOrange;
+        }
+        &:nth-child(2){
+            background:$DarkCyan;
+        }
+        &:last-child{
+            background: $VeryDarkCyan;
+        }
+    }
+    
+
+}

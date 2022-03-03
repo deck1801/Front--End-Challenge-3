@@ -1,0 +1,30 @@
+html{
+    font-size:100%;
+    box-sizing: border-box;
+}
+
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background: $VeryLightGray;
+    font-size:0.75rem;
+    line-height: 1.3rem;
+    
+    &.noscroll{
+        overflow: hidden;
+    }
+}
+
+h1,h2,h3{
+    margin: 0;
+    padding: 0;
+}
+
+a,a:visited,a:hover{
+    text-decoration: none;
+}
