@@ -1,6 +1,5 @@
 html{
     font-size:100%;
-    box-sizing: border-box;
 }
 
 *,*::after,*::before{
@@ -8,16 +7,14 @@ html{
 }
 
 body{
-    display: flex;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
     background: $VeryLightGray;
     font-size:0.75rem;
     line-height: 1.3rem;
-    
-    &.noscroll{
-        overflow: hidden;
-    }
+
 }
 
 h1,h2,h3{

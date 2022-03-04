@@ -1,15 +1,11 @@
 .container{
-    position: absolute;
     padding: 0;
+    margin: 0 1.5rem 0 1.5rem;
     width:20.4375rem;
-    height: 82.875rem;
     display: flex;
     flex-direction: column;
-    margin: 0;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
     border-radius: 1rem;
+    background:none;
     
 
     .sec{
@@ -19,27 +15,62 @@
         flex-direction: column;
         padding:3.0625rem;
         
+       
+        
         svg{
             width: 4.0625rem;
             height: 2.625rem;
             margin-bottom: 2.5625rem;
+            
         }
 
         h2{
             font-size: 2.125rem;
             color: $VeryLightGray;
             margin-bottom: 2.4375rem;
-            font-family: 'Lexend Deca', sans-serif;
+            font-family: 'Big Shoulders Display', cursive;
         }
+
+        p{
+            font-size: 0.8125rem;
+            font-family: 'Lexend Deca', sans-serif;
+            color: $VeryLightGray;
+            margin-bottom: 3.375rem;
+        }
+
+        .btn{
+            height: 3rem;
+            width: 9.1875rem;
+            border-radius:2rem;
+            border:none;
+            font-size: 0.8125rem;
+            color: $BrightOrange;
+            
+        }
+        
         
         &:nth-child(1){
             background: $BrightOrange;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+            margin-top: 5.5rem;
+            
+            
         }
         &:nth-child(2){
             background:$DarkCyan;
+            .btn{
+                color: $DarkCyan;
+            }
         }
         &:last-child{
             background: $VeryDarkCyan;
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            .btn{
+                color: $VeryDarkCyan;
+            }
+            margin-bottom: 5.5rem;
         }
     }
     

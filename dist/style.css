@@ -1,7 +1,5 @@
 html {
   font-size: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 *, *::after, *::before {
@@ -10,18 +8,17 @@ html {
 }
 
 body {
+  padding: 0;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0;
-  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: #f2f2f2;
   font-size: 0.75rem;
   line-height: 1.3rem;
-}
-
-body.noscroll {
-  overflow: hidden;
 }
 
 h1, h2, h3 {
@@ -34,10 +31,9 @@ a, a:visited, a:hover {
 }
 
 .container {
-  position: absolute;
   padding: 0;
+  margin: 0 1.5rem 0 1.5rem;
   width: 20.4375rem;
-  height: 82.875rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,12 +41,8 @@ a, a:visited, a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   border-radius: 1rem;
+  background: none;
 }
 
 .container .sec {
@@ -76,18 +68,48 @@ a, a:visited, a:hover {
   font-size: 2.125rem;
   color: #f2f2f2;
   margin-bottom: 2.4375rem;
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+.container .sec p {
+  font-size: 0.8125rem;
   font-family: 'Lexend Deca', sans-serif;
+  color: #f2f2f2;
+  margin-bottom: 3.375rem;
+}
+
+.container .sec .btn {
+  height: 3rem;
+  width: 9.1875rem;
+  border-radius: 2rem;
+  border: none;
+  font-size: 0.8125rem;
+  color: #e38826;
 }
 
 .container .sec:nth-child(1) {
   background: #e38826;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  margin-top: 5.5rem;
 }
 
 .container .sec:nth-child(2) {
   background: #006970;
 }
 
+.container .sec:nth-child(2) .btn {
+  color: #006970;
+}
+
 .container .sec:last-child {
   background: #004241;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  margin-bottom: 5.5rem;
+}
+
+.container .sec:last-child .btn {
+  color: #004241;
 }
 /*# sourceMappingURL=style.css.map */
