@@ -21,6 +21,12 @@ body {
   line-height: 1.3rem;
 }
 
+@media (min-width: 64em) {
+  body {
+    display: block;
+  }
+}
+
 h1, h2, h3 {
   margin: 0;
   padding: 0;
@@ -45,6 +51,23 @@ a, a:visited, a:hover {
   background: none;
 }
 
+@media (min-width: 64em) {
+  .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: absolute;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 51.875rem;
+    height: 28.125rem;
+  }
+}
+
 .container .sec {
   width: 100%;
   height: 27.5625rem;
@@ -55,7 +78,7 @@ a, a:visited, a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 3.0625rem;
+  padding: 2.625rem;
 }
 
 .container .sec svg {
@@ -64,11 +87,23 @@ a, a:visited, a:hover {
   margin-bottom: 2.5625rem;
 }
 
+@media (min-width: 64em) {
+  .container .sec svg {
+    margin-bottom: 2.3125rem;
+  }
+}
+
 .container .sec h2 {
   font-size: 2.125rem;
   color: #f2f2f2;
   margin-bottom: 2.4375rem;
   font-family: 'Big Shoulders Display', cursive;
+}
+
+@media (min-width: 64em) {
+  .container .sec h2 {
+    margin-bottom: 2.1875rem;
+  }
 }
 
 .container .sec p {
@@ -94,6 +129,14 @@ a, a:visited, a:hover {
   margin-top: 5.5rem;
 }
 
+@media (min-width: 64em) {
+  .container .sec:nth-child(1) {
+    margin: 0;
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: 0;
+  }
+}
+
 .container .sec:nth-child(2) {
   background: #006970;
 }
@@ -111,5 +154,13 @@ a, a:visited, a:hover {
 
 .container .sec:last-child .btn {
   color: #004241;
+}
+
+@media (min-width: 64em) {
+  .container .sec:last-child {
+    margin: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
